@@ -17,9 +17,9 @@ int main(int argc, char *argv[])
 	
 	printf("This program solves quadratic equations.\n");
 	printf("Please enter 3 integers a, b and c to solve.\n");
-	printf("\nRemember to press space after each number and then hit return when you have typed all 3 values in.\n");
+	printf("\nRemember to hit return after each value entered.\n");
 	
-	scanf("%d, %d, %d\n", &a, &b, &c);
+	scanf("%d\n%d\n%d", &a, &b, &c);
 	
 	printf("You have entered the following equation.\n");
 	printf("%dx^2%+dx%+d\n", a, b, c);
@@ -44,9 +44,11 @@ int main(int argc, char *argv[])
 	x2 = (-b - sqrt(d)) / (2 * a);
 		if(x1 == x2)
 		{
-		printf("There is a repeated root and it is %.3f", x1);	
+		printf("There is a repeated root and it is %.3f\n", x1);	
 		}
 	}
+	
+	printf("Press return to exit.");
 	
 	getch();
 	return 0;
